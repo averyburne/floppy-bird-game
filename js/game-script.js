@@ -7,7 +7,7 @@ let by = 200
 
 background.src = "js/images/flappy-bird-background.png"
 bird.src = "js/images/flappy-bird.png"
-pipe.src = 'js/image/flappy-bird-pipe.png'
+pipe.src = "js/images/flappy-bird-pipe.png"
 
 document.addEventListener("keydown", moveBird)
 
