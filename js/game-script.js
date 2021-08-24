@@ -12,13 +12,10 @@ pipe.src = "js/images/flappy-bird-pipe.png"
 document.addEventListener("keydown", moveBird)
 
 function main() {
-    draw()
     setTimeout(function onTick() {
         draw()
         main()
-        by += 1
-        console.log(by)
-    }, 100)
+    }, 1000)
 }
 
 function moveBird() {
@@ -27,6 +24,8 @@ function moveBird() {
 }
 
 function draw() {
+    by += 1
+    console.log(by)
     // gameboardCtx.fillStyle = 'white'
     // gameboardCtx.strokestyle = 'black'
     // gameboardCtx.fillRect(0, 0, gameboard.width, gameboard.height)
